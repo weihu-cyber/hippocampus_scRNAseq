@@ -62,7 +62,7 @@ for(Cell in cell_types){
   newdata <- mat_col
   colnames(newdata) <- "Pseudotime"
   
-  time_diff_sig <- subset(time_diff, pval_FDR < 0.01 & qval_FDR < 0.01) # set adjusted p value and q value both < 0.01
+  time_diff_sig <- subset(time_diff, qval < 0.001) # set adjusted p value and q value both < 0.01
   p1 <- plot_pseudotime_heatmap(monocle_cds[time_diff_sig$gene_short_name,],
                                 num_clusters = cluster,
                                 cluster_rows = T,
