@@ -2,11 +2,6 @@ rm(list = ls()) # remove environment variables
 library(tidyverse)
 library(Seurat)
 library(harmony)
-library(clusterProfiler)
-library(org.Hs.eg.db)
-library(ggpubr)
-library(RColorBrewer)
-library(patchwork)
 
 # import data
 sce.mer <- readRDS("/data/whu/home/whr_brain_project_final/results/base/hippocampus_harmony_final.rds")
