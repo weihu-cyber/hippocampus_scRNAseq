@@ -1,2 +1,2 @@
-## Hippocampu scRNAseq
-Hippocampu scRNAseq data processing script
+## Hippocampus scRNAseq
+Hippocampus scRNAseq data processing script
